@@ -83,6 +83,9 @@ header{
     .card-img img{
         height: 40vw;
     } 
+    .card-title{
+        font-size: 18px;
+    }
     .card-buy-btn{
         font-size: 15px;
     }
