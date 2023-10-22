@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px;
+    font-size: 30px;    
+    border-bottom: 3px solid rgb(15, 14, 14);
+}
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(250, 249, 246);
+    gap: 30px;
+    padding: 30px;
+}
+.card{
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px gray;
+    background-color: white;
+    padding-bottom: 40px;
+}
+.card-img{
+    text-align: center;
+    padding: 20px;
+}
+.card-img img{
+    border-radius: 10px;
+    width: 95%;
+    position: relative;
+    height: 20vw;
+    transition: transform 0.3s;
+}
+.card-img img:hover{
+    transform: scale(1.05);
+}
+.card-title,.card-price{
+    padding-left: 25px;
+}
+.card-title{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-price{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:400;
+    color:rgb(39, 3, 3);
+}
+.card-buy-btn{
+    text-align: right;
+    padding-right: 20px;
+}
+.card-buy-btn button{
+    padding:7px 15px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    border:none;
+    color: white;
+    background-image: linear-gradient(rgb(5, 5, 119),rgb(17, 5, 193));
+    box-shadow: 1px 1px 5px black;
+}
+.card-buy-btn button:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+.card-buy-btn button:active{
+    box-shadow: 1px 1px 2px black;
+    transform: translateY(1px);
+}
+@media only screen and (max-width:768px){
+    header{
+        padding: 15px;
+        font-size: 25px;
+    }
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    .card-img img{
+        height: 40vw;
+    } 
+    .card-buy-btn{
+        font-size: 15px;
+    }
+}
